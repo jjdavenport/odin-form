@@ -1,0 +1,89 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+:root {
+    --green: #596D48;
+    --grey-background: #f9fafb;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left {
+    width: 45vw;
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.right {
+    width: 55vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.right-top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    background-color: var(--grey-background);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 2em;
+}
+
+.form {
+    height: 30vh;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+}
+
+label {
+    font-size: 1em;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-background);
+    height: 40vh;
+}
+
+.create-account {
+    background-color: var(--green);
+    color: #fff;
+    border-radius: 8px;
+    height: 40px;
+    width: 200px;
+    margin: 4%;
+}
+
+.log-in {
+    color: var(--green);
+}
+
+.p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.log-contain {
+    display: flex;
+}

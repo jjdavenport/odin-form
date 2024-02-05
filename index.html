@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="left"></div>
+        <div class="left">
+        </div>
         <div class="right">
-            <div class="right-top"></div>
+            <div class="right-top">
+                <p class="text">This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams.Sign up now to get started.
+                    You <em>Know</em> you want to. 
+                </p>
+            </div>
             <div class="form">
-                <form action="form"></form>
+                <form>
+                    <legend>Let's do this!</legend>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="name" class="input">
+                    <label for="lasy-name">LAST NAME</label>
+                    <input type="name" class="input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" class="input">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type='number' class="input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" class="input">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" class="input">
+                </form>
             </div>
             <div class="bottom">
-                <button class="create-account"></button>
+                <button class="create-account">Create Account</button>
+                <div class="log-contain">
+                <p class="p">Already have an account?</p>
+                <a class="log-in">Log In</a>
+            </div>
             </div>
         </div>
     </div>
