@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'araboto';
+    src: url(./Araboto\ Medium\ 400.ttf)
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -7,6 +12,9 @@ html, body {
 :root {
     --green: #596D48;
     --grey-background: #f9fafb;
+    --default-font-color: #000000;
+    --form-border-color: #E5E7EB;
+    --default-font-family: 'araboto';
 }
 
 .container {
@@ -44,10 +52,27 @@ html, body {
     flex-direction: column;
     justify-content: flex-end;
     font-size: 2em;
+    font-family: var(--default-font-family);
 }
 
 .form {
     height: 30vh;
+}
+
+label {
+    font-family: var(--default-font-family);
+}
+
+legend {
+    color: var(--default-font-color);
+    font-size: 2em;
+    font-family: var(--default-font-family);
+}
+
+input {
+    border-color: var(--form-border-color);
+    font-size: 1em;
+    font-family: var(--default-font-family);
 }
 
 input:focus {
@@ -70,18 +95,23 @@ label {
     background-color: var(--green);
     color: #fff;
     border-radius: 8px;
-    height: 40px;
-    width: 200px;
+    height: 4vh;
+    width: 18vw;
     margin: 4%;
+    font-family: var(--default-font-family);
+    font-size: 1em;
+    border: none;
 }
 
 .log-in {
     color: var(--green);
+    font-family: var(--default-font-family);
 }
 
 .p {
     padding: 0px;
     margin: 0px;
+    font-family: var(--default-font-family);
 }
 
 .log-contain {
