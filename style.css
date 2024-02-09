@@ -1,12 +1,13 @@
 @font-face {
-    font-family: 'araboto';
-    src: url(./Araboto\ Medium\ 400.ttf)
+    font-family: 'norse-bold';
+    src: url(./Norse-Bold.otf)
 }
 
 html, body {
     padding: 0;
     margin: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 :root {
@@ -14,7 +15,7 @@ html, body {
     --grey-background: #f9fafb;
     --default-font-color: #000000;
     --form-border-color: #E5E7EB;
-    --default-font-family: 'araboto';
+    --default-font-family: 'norse-bold';
 }
 
 .container {
@@ -41,9 +42,10 @@ html, body {
 
 .right-top {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 30%;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 30vh;
     background-color: var(--grey-background);
 }
 
@@ -51,8 +53,25 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: var(--default-font-family);
+    margin-left: 3vw;
+    margin-bottom: 0%;
+    white-space: nowrap;
+}
+
+#i-text {
+    display: inline;
+}
+
+#i-div {
+    margin-bottom: 4vh;
+    padding: 0%;
+}
+
+.i-text {
+    display: inline;
+    margin-bottom: 3vh;
 }
 
 .form {
@@ -65,23 +84,48 @@ label {
 
 legend {
     color: var(--default-font-color);
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: var(--default-font-family);
+    margin-left: 3vw;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+}
+
+.second-row{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
 }
 
 input {
     border-color: var(--form-border-color);
     font-size: 1em;
     font-family: var(--default-font-family);
+    border-radius: 4px;
+    width: 18vw;
+    height: 1.6vh;
+    margin-bottom: 1vh;
 }
+
 
 input:focus {
     outline: none;
-    border-color: blue;
+    border: 1px solid blue;
 }
 
 label {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .bottom {
@@ -95,9 +139,10 @@ label {
     background-color: var(--green);
     color: #fff;
     border-radius: 8px;
-    height: 4vh;
+    height: 3.5vh;
     width: 18vw;
-    margin: 4%;
+    margin-left: 3vw;
+    margin-top: 2vh;
     font-family: var(--default-font-family);
     font-size: 1em;
     border: none;
@@ -106,6 +151,7 @@ label {
 .log-in {
     color: var(--green);
     font-family: var(--default-font-family);
+    margin-left: 1vw;
 }
 
 .p {
@@ -116,4 +162,6 @@ label {
 
 .log-contain {
     display: flex;
+    margin-left: 3vw;
+    margin-top: 2vh;
 }
