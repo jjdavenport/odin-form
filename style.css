@@ -149,6 +149,7 @@ html, body {
 
 label {
     font-family: var(--default-font-family);
+    margin-bottom: 0.1vh;
 }
 
 legend {
@@ -186,6 +187,7 @@ input {
     width: 18vw;
     height: 1.8vh;
     margin-bottom: 1vh;
+    padding-left: 0.8vw;
 }
 
 #error {
@@ -202,6 +204,7 @@ input {
 input:focus {
     outline: none;
     border: 1px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
 }
 
 input[type="password"]:invalid {
