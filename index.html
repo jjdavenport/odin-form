@@ -35,20 +35,20 @@
                 <form>
                     <div class="first-row">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="name" class="input" required>
+                    <input type="name" class="input" onkeydown="return (event.keyCode !== 32);" required>
                     <label for="email">EMAIL</label>
-                    <input type="email" class="input" required>   
+                    <input type="email" class="input" onkeydown="return (event.keyCode !== 32);" required>   
                     <label for="password">PASSWORD</label>
-                    <input type="password" class="input" id='password' min='1' max='128' required>  
+                    <input type="password" class="input" id='password' min='1' max='128' onkeydown="return (event.keyCode !== 32);" required>  
                     <p id="error">*Passwords do not match</p>              
                 </div>
                 <div class="second-row">
                     <label for="last-name">LAST NAME</label>
-                    <input type="name" class="input" required>
+                    <input type="name" class="input" onkeydown="return (event.keyCode !== 32);" required>
                     <label for="phone-number">PHONE NUMBER</label>
-                    <input type='tel' class="input" required>
+                    <input type='tel' id='phone' class="input" onkeydown="return (event.keyCode !== 32);" min='11' max='15' required>
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" class="input" min='1' max='128' required>
+                    <input type="password" id="confirm-password" class="input" min='1' max='128' onkeydown="return (event.keyCode !== 32);" required>
                 </div>
             </div>
             <div class="bottom">

@@ -30,3 +30,35 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    function validateInput(event) {
+        const inputValue = event.target.value;
+        const key = event.key;
+        const maxCharacters = 15;
+
+        if ((key >= '0' && key <= '9') || key === '+' || key === 'Backspace') {
+            if ((key === '+' && event.target.selectionStart === 0) || inputValue === '') {
+                return true;
+            }
+            if (inputValue.indexOf('+') !== -1 && key === '+') {
+                event.preventDefault();
+            }
+            if (inputValue.length >= maxCharacters && key !== 'Backspace') {
+                event.preventDefault();
+            }
+        } else {
+            event.preventDefault();
+        }
+    }
+
+
+    document.getElementById('phone').addEventListener('keydown', validateInput);
+
+
+    document.getElementById('phone').addEventListener('keydown', function(event) {
+        if (event.key === " ") {
+            event.preventDefault(); 
+        }
+    });
+});
