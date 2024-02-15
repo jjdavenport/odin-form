@@ -135,16 +135,17 @@ html, body {
 }
 
 .right {
+    display: flex;
+    flex-direction: column;
     width: 55vw;
     height: 100vh;
     background-color: #fff;
 }
 
-.right-top {
+#right-top {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 100vw;
     height: 36vh;
     background-color: var(--grey-background);
 }
@@ -156,8 +157,6 @@ html, body {
     margin-bottom: 0%;
     font-weight: bold;
     margin-top: 0%;
-    word-wrap: break-word;
-    overflow: hidden;
 }
 
 #i-text {
