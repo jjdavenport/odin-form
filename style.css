@@ -90,6 +90,7 @@ html, body {
     --default-font-color: #000000;
     --form-border-color: #E5E7EB;
     --default-font-family: 'Roboto', helvetica;
+    --dark-font: #fff; 
 }
 
 .container {
@@ -100,7 +101,7 @@ html, body {
 }
 
 .left {
-    width: 45vw;
+    width: 40vw;
     background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,7 +138,7 @@ html, body {
 .right {
     display: flex;
     flex-direction: column;
-    width: 55vw;
+    width: 60vw;
     height: 100vh;
     background-color: #fff;
 }
@@ -146,7 +147,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 36vh;
+    height: 37vh;
     background-color: var(--grey-background);
 }
 
@@ -157,20 +158,21 @@ html, body {
     margin-bottom: 0%;
     font-weight: bold;
     margin-top: 0%;
+    width: fit-content;
 }
+
+span.br {
+    display: block;
+  }
 
 #i-text {
     display: inline;
-}
-
-#i-div {
     margin-bottom: 4vh;
-    padding: 0%;
+    margin-top: 2vh; 
 }
 
 .i-text {
     display: inline;
-    margin-bottom: 3vh;
 }
 
 .form {
@@ -259,8 +261,8 @@ label {
     background-color: var(--green);
     color: #fff;
     border-radius: 8px;
-    height: 3.5vh;
-    width: 18vw;
+    height: 45px;
+    width: 210px;
     margin-left: 3vw;
     margin-top: 3vh;
     font-family: var(--default-font-family);
@@ -304,4 +306,29 @@ label {
 
 #footer.footer a {
     color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+    }
+}
+
+@media screen and (max-width: 600px){
+    .right {
+        width: 100vw;
+        height: 100vh;
+    } 
+    .left {
+        height: 0vw;
+        width: 0vh;
+    }
+    #footer.footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .text br {
+        display: none;
+    }
 }
