@@ -144,8 +144,9 @@ input {
     font-size: 1em;
     font-family: var(--default-font-family);
     border-radius: 4px;
-    width: 220px;
-    height: 1.8vh;
+    width: 20vw;
+    height: 1.6vh;
+    max-width: 220px;
     margin-bottom: 1vh;
     padding-left: 0.8vw;
 }
@@ -252,6 +253,9 @@ label {
     }
     #footer.footer {
         display: none;
+    }
+    input {
+        min-width: 40vw;                    
     }
 }
 
