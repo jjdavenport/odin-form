@@ -145,7 +145,7 @@ input {
     font-family: var(--default-font-family);
     border-radius: 4px;
     width: 20vw;
-    height: 1.6vh;
+    height: 1.4vh;
     max-width: 220px;
     margin-bottom: 1vh;
     padding-left: 0.8vw;
@@ -255,6 +255,7 @@ label {
         display: none;
     }
     input {
+        min-height: 1.8vh;
         min-width: 40vw;                    
     }
 }
